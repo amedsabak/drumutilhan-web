@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Uzm. Dr. Umut İlhan, Yedikule Göğüs Hastalıkları ve Göğüs Cerrahisi Eğitim ve Araştırma Hastanesi'nde göğüs hastalıkları uzmanı. İnterstisyel akciğer hastalıkları ve girişimsel pulmonoloji alanında uzman.">
+  <meta name="keywords" content="Umut İlhan, göğüs hastalıkları, Yedikule, İstanbul, interstisyel akciğer hastalığı, pulmonoloji, bronkoskopi">
+  <meta property="og:title" content="Uzm. Dr. Umut İlhan | Göğüs Hastalıkları Uzmanı | Yedikule Hastanesi İstanbul">
+  <meta property="og:description" content="İnterstisyel akciğer hastalıkları ve girişimsel pulmonoloji alanında uzman. Yedikule Göğüs Hastalıkları Hastanesi, İstanbul.">
+  <meta property="og:type" content="website">
+  <title>Uzm. Dr. Umut İlhan | Göğüs Hastalıkları Uzmanı | Yedikule Hastanesi İstanbul</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    .hero-bg {
+      background: linear-gradient(135deg, rgba(15,23,42,0.88) 0%, rgba(30,58,138,0.65) 100%);
+    }
+    html { scroll-padding-top: 72px; }
+    .pub-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .pub-card:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.08); }
+  </style>
+</head>
+<body class="bg-white">
+
+  <!-- NAVİGASYON -->
+  <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="/turkish/" class="font-bold text-base sm:text-lg text-blue-950 tracking-tight shrink-0">
+          DR. UMUT İLHAN
+        </a>
+        <!-- Masaüstü -->
+        <div class="hidden lg:flex items-center gap-5 text-xs font-semibold uppercase tracking-widest">
+          <a href="#hakkimda" class="text-slate-600 hover:text-blue-700 transition">Hakkımda</a>
+          <a href="#uzmanlık" class="text-slate-600 hover:text-blue-700 transition">Uzmanlık</a>
+          <a href="#yayinlar" class="text-slate-600 hover:text-blue-700 transition">Yayınlar</a>
+          <a href="#basinda" class="text-slate-600 hover:text-blue-700 transition">Basında</a>
+          <a href="#iletisim" class="text-slate-600 hover:text-blue-700 transition">İletişim</a>
+          <a href="/" class="text-blue-700 bg-blue-50 border border-blue-200 px-3 py-1.5 rounded-md font-bold hover:bg-blue-100 transition">EN</a>
+          <a href="https://mhrs.gov.tr" target="_blank" rel="noopener noreferrer"
+             class="bg-blue-900 text-white px-5 py-2.5 rounded-full hover:bg-blue-800 transition">
+            <i class="fas fa-calendar-check mr-1.5"></i>Randevu Al
+          </a>
+        </div>
+        <!-- Mobil sağ taraf -->
+        <div class="flex lg:hidden items-center gap-2">
+          <a href="/" class="text-blue-700 bg-blue-50 border border-blue-200 px-2.5 py-1 rounded text-xs font-bold">EN</a>
+          <button id="menu-toggle" aria-label="Menüyü aç"
+            class="text-slate-700 p-2 rounded-lg hover:bg-slate-100 transition">
+            <i class="fas fa-bars text-lg" id="menu-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobil açılır menü -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-1">
+        <a href="#hakkimda" onclick="closeMenu()" class="text-slate-700 font-semibold text-sm uppercase tracking-widest px-3 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-700 transition">Hakkımda</a>
+        <a href="#uzmanlık" onclick="closeMenu()" class="text-slate-700 font-semibold text-sm uppercase tracking-widest px-3 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-700 transition">Uzmanlık</a>
+        <a href="#yayinlar" onclick="closeMenu()" class="text-slate-700 font-semibold text-sm uppercase tracking-widest px-3 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-700 transition">Yayınlar</a>
+        <a href="#basinda" onclick="closeMenu()" class="text-slate-700 font-semibold text-sm uppercase tracking-widest px-3 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-700 transition">Basında</a>
+        <a href="#iletisim" onclick="closeMenu()" class="text-slate-700 font-semibold text-sm uppercase tracking-widest px-3 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-700 transition">İletişim</a>
+        <div class="pt-2 mt-1 border-t border-slate-100">
+          <a href="https://mhrs.gov.tr" target="_blank" rel="noopener noreferrer"
+             class="flex items-center justify-center gap-2 bg-blue-900 text-white px-6 py-3.5 rounded-full font-bold text-sm hover:bg-blue-800 transition">
+            <i class="fas fa-calendar-check"></i>Randevu Al
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="relative min-h-screen flex items-center bg-slate-900 text-white overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="../umut-1.jpeg" alt="Uzm. Dr. Umut İlhan" class="w-full h-full object-cover object-top" loading="eager">
+      <div class="hero-bg absolute inset-0"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 w-full">
+      <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div class="space-y-5 sm:space-y-6">
+          <span class="inline-block text-blue-300 font-semibold tracking-widest uppercase text-xs sm:text-sm">
+            Yedikule Göğüs Hastalıkları Hastanesi · İstanbul
+          </span>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+            Akciğer Sağlığında<br>
+            <span class="text-blue-400 italic font-normal">Bilimsel</span><br>
+            Tecrübe
+          </h1>
+          <p class="text-base sm:text-lg text-slate-300 max-w-lg font-light leading-relaxed">
+            Uzm. Dr. Umut İlhan, interstisyel akciğer hastalıkları ve kompleks pulmoner sorunların
+            tanı ve tedavisinde Yedikule Eğitim ve Araştırma Hastanesi'nde uzman hizmet sunmaktadır.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
+            <a href="https://mhrs.gov.tr" target="_blank" rel="noopener noreferrer"
+               class="bg-blue-600 text-white px-7 py-4 rounded-full font-bold hover:bg-blue-500 transition shadow-xl text-center text-sm sm:text-base">
+              <i class="fas fa-calendar-check mr-2"></i>Randevu Al
+            </a>
+            <a href="#hakkimda"
+               class="border-2 border-white/30 text-white px-7 py-4 rounded-full font-semibold hover:bg-white/10 transition text-center text-sm sm:text-base">
+              Daha Fazla <i class="fas fa-arrow-down ml-1 text-xs"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hidden lg:flex justify-end">
+          <div class="relative">
+            <div class="absolute -inset-3 bg-blue-500/15 rounded-3xl blur-2xl"></div>
+            <img src="../umut-1.jpeg" alt="Uzm. Dr. Umut İlhan, Göğüs Hastalıkları Uzmanı"
+                 class="relative rounded-3xl shadow-2xl border-2 border-white/10 w-72 xl:w-80 object-cover object-top aspect-[3/4]">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HAKKIMDA -->
+  <section id="hakkimda" class="py-20 sm:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div>
+          <span class="text-blue-600 font-bold tracking-widest uppercase text-xs">Hakkımda</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-blue-950 mt-3 mb-6">Uzm. Dr. Umut İlhan</h2>
+          <p class="text-slate-600 leading-relaxed mb-4 text-sm sm:text-base">
+            Dr. Umut İlhan, İstanbul'da bulunan ve Türkiye'nin en prestijli akciğer hastalıkları referans merkezlerinden biri olan,
+            Sağlık Bilimleri Üniversitesi bünyesindeki
+            <strong class="text-slate-800">Yedikule Göğüs Hastalıkları ve Göğüs Cerrahisi Eğitim ve Araştırma Hastanesi</strong>'nde
+            göğüs hastalıkları uzmanı olarak görev yapmaktadır.
+          </p>
+          <p class="text-slate-600 leading-relaxed mb-4 text-sm sm:text-base">
+            Klinik ve araştırma odağı öncelikli olarak <strong class="text-slate-800">interstisyel akciğer hastalıkları (İAH)</strong>'dır.
+            Girişimsel bronkoskopi alanında kriyo-transbronşiyal biyopsi (kriyo-TBB) ve bronkoalveoler lavaj (BAL)
+            konularında özel uzmanlığa sahiptir.
+          </p>
+          <p class="text-slate-600 leading-relaxed mb-8 text-sm sm:text-base">
+            Aktif bir araştırmacı olarak Dr. İlhan, <em>BMC Pulmonary Medicine</em>,
+            <em>Allergologia et Immunopathologia</em>, <em>Cureus</em> ve
+            <em>Sarcoidosis, Vasculitis and Diffuse Lung Diseases</em> dahil önde gelen
+            uluslararası pulmonoloji dergilerinde yazışma ve ortak yazar olarak katkı sunmuştur.
+          </p>
+          <div class="flex flex-col sm:flex-row flex-wrap gap-3">
+            <a href="#yayinlar"
+               class="inline-flex items-center justify-center gap-2 bg-blue-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-800 transition text-sm">
+              <i class="fas fa-book-open"></i> Yayınları Gör
+            </a>
+            <a href="https://mhrs.gov.tr" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-center gap-2 border-2 border-blue-900 text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-blue-50 transition text-sm">
+              <i class="fas fa-calendar-alt"></i> Randevu Al
+            </a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-blue-950 text-white p-5 sm:p-6 rounded-2xl">
+            <div class="text-2xl sm:text-3xl font-bold text-blue-300 mb-2">6+</div>
+            <div class="text-xs sm:text-sm text-blue-100 font-medium leading-snug">Hakemli uluslararası yayın</div>
+          </div>
+          <div class="bg-slate-50 border border-slate-100 p-5 sm:p-6 rounded-2xl">
+            <div class="text-xl sm:text-2xl font-bold text-blue-950 mb-2">İAH</div>
+            <div class="text-xs sm:text-sm text-slate-600 font-medium leading-snug">İnterstisyel Akciğer Hastalıkları uzmanı</div>
+          </div>
+          <div class="bg-slate-50 border border-slate-100 p-5 sm:p-6 rounded-2xl">
+            <div class="text-xl sm:text-2xl font-bold text-blue-950 mb-2">SBÜ</div>
+            <div class="text-xs sm:text-sm text-slate-600 font-medium leading-snug">Sağlık Bilimleri Üniversitesi bünyesinde</div>
+          </div>
+          <div class="bg-blue-600 text-white p-5 sm:p-6 rounded-2xl">
+            <div class="text-2xl sm:text-3xl font-bold mb-2"><i class="fas fa-hospital"></i></div>
+            <div class="text-xs sm:text-sm text-blue-100 font-medium leading-snug">Yedikule Hastanesi, İstanbul</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UZMANLIK ALANLARI -->
+  <section id="uzmanlık" class="py-20 sm:py-28 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12 sm:mb-16 text-center">
+        <span class="text-blue-600 font-bold tracking-widest uppercase text-xs">Klinik Odak</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-blue-950 mt-3">Uzmanlık Alanları</h2>
+        <p class="text-slate-500 mt-3 max-w-xl mx-auto text-sm sm:text-base">
+          İleri pulmoner hastalıklarda hassas tanı ve kanıta dayalı tedaviye odaklanan özel klinik bakım.
+        </p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+        <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center mb-4 text-xl">
+            <i class="fas fa-lungs"></i>
+          </div>
+          <h3 class="text-lg font-bold text-blue-950 mb-2">İnterstisyel Akciğer Hastalıkları</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">İdiyopatik pulmoner fibrozis (İPF) ve fibrotik İAH dahil interstisyel akciğer hastalıklarının tanı ve tedavisi — temel araştırma ve klinik odak alanı.</p>
+        </div>
+        <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center mb-4 text-xl">
+            <i class="fas fa-microscope"></i>
+          </div>
+          <h3 class="text-lg font-bold text-blue-950 mb-2">Kriyo-Transbronşiyal Biyopsi</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">İAH tanısı için ileri girişimsel bronkoskopi (kriyo-TBB). <em>BMC Pulmonary Medicine</em>'da (2025) yayımlanan kriyo-TBB ve BAL çalışmasının yazışma yazarı.</p>
+        </div>
+        <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center mb-4 text-xl">
+            <i class="fas fa-virus"></i>
+          </div>
+          <h3 class="text-lg font-bold text-blue-950 mb-2">COVID-19 Sonrası Akciğer Hastalığı</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Post-COVID-19 interstisyel akciğer hastalığında uzun süreli immünosüpresif tedavi yönetimi; klinik, fonksiyonel ve radyolojik sonuçlar üzerine yayımlanmış araştırma.</p>
+        </div>
+        <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center mb-4 text-xl">
+            <i class="fas fa-bacterium"></i>
+          </div>
+          <h3 class="text-lg font-bold text-blue-950 mb-2">Allerjik Bronkopulmoner Asperjillozis</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">ABPA/ABPM ve pulmoner asperjilloziste basamaklı ve hassas yönetim; çok merkezli gerçek yaşam araştırma katkıları.</p>
+        </div>
+        <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center mb-4 text-xl">
+            <i class="fas fa-wind"></i>
+          </div>
+          <h3 class="text-lg font-bold text-blue-950 mb-2">KOAH ve Alfa-1 Antitripsin Eksikliği</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">KOAH hastalarında alfa-1 antitripsin eksikliğinin genetik taraması ve tedavisi. <em>Turkish Journal of Medical Sciences</em>'ta (2022) yayımlanan ulusal çok merkezli araştırma.</p>
+        </div>
+        <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center mb-4 text-xl">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <h3 class="text-lg font-bold text-blue-950 mb-2">Akciğer Hastalığında Egzersiz Fizyolojisi</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Yakın kızılötesi spektroskopi kullanılarak fibrotik İAH'ta egzersizle tetiklenen kas oksijenasyonu değişikliklerine ilişkin araştırma.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YAYINLAR -->
+  <section id="yayinlar" class="py-20 sm:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12 sm:mb-16 border-l-4 border-blue-600 pl-5">
+        <span class="text-blue-600 font-bold tracking-widest uppercase text-xs">Akademik Araştırma</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-blue-950 mt-2">Seçilmiş Yayınlar</h2>
+        <p class="text-slate-500 mt-2 text-sm sm:text-base">Önde gelen uluslararası pulmonoloji dergilerinde hakemli araştırmalar.</p>
+      </div>
+      <div class="flex flex-col gap-4 sm:gap-5">
+
+        <div class="pub-card bg-white border border-slate-200 rounded-2xl p-5 sm:p-7 shadow-sm">
+          <div class="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-5">
+            <div class="shrink-0">
+              <span class="inline-block bg-blue-950 text-blue-200 text-xs font-bold px-3 py-1.5 rounded-lg">2025</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex flex-wrap gap-2 mb-2.5">
+                <span class="bg-blue-50 text-blue-700 text-xs font-semibold px-2.5 py-1 rounded-full border border-blue-100">Yazışma Yazarı</span>
+                <span class="bg-green-50 text-green-700 text-xs font-semibold px-2.5 py-1 rounded-full border border-green-100">BMC Pulmonary Medicine</span>
+              </div>
+              <h3 class="text-sm sm:text-base lg:text-lg font-bold text-blue-950 mb-2 leading-snug">
+                İnterstisyel akciğer hastalıklarında bronkoalveoler lavajın kriyo-transbronşiyal biyopsiye tanısal katkısı
+              </h3>
+              <p class="text-slate-500 text-xs sm:text-sm mb-3">
+                <strong>İlhan U</strong>, Demirkol B, Çörtük M, Cetinkaya E ve ark. — <em>BMC Pulmonary Medicine</em> 26(1):25 (2025)
+              </p>
+              <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12836815/" target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center gap-1.5 text-blue-600 hover:text-blue-800 text-xs sm:text-sm font-semibold transition">
+                <i class="fas fa-external-link-alt text-xs"></i> PubMed Central'da Görüntüle
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-card bg-white border border-slate-200 rounded-2xl p-5 sm:p-7 shadow-sm">
+          <div class="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-5">
+            <div class="shrink-0">
+              <span class="inline-block bg-blue-950 text-blue-200 text-xs font-bold px-3 py-1.5 rounded-lg">2026</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex flex-wrap gap-2 mb-2.5">
+                <span class="bg-purple-50 text-purple-700 text-xs font-semibold px-2.5 py-1 rounded-full border border-purple-100">Allergologia et Immunopathologia</span>
+              </div>
+              <h3 class="text-sm sm:text-base lg:text-lg font-bold text-blue-950 mb-2 leading-snug">
+                Allerjik bronkopulmoner asperjillozis/mikoziste basamaklı, hassas yönetim: Gerçek yaşam çok merkezli çalışma
+              </h3>
+              <p class="text-slate-500 text-xs sm:text-sm">
+                İlhan U ve ark. — <em>Allergologia et Immunopathologia</em> 54(2):117–124 (2026)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-card bg-white border border-slate-200 rounded-2xl p-5 sm:p-7 shadow-sm">
+          <div class="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-5">
+            <div class="shrink-0">
+              <span class="inline-block bg-blue-950 text-blue-200 text-xs font-bold px-3 py-1.5 rounded-lg">2026</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex flex-wrap gap-2 mb-2.5">
+                <span class="bg-orange-50 text-orange-700 text-xs font-semibold px-2.5 py-1 rounded-full border border-orange-100">Olgu Sunumu</span>
+                <span class="bg-green-50 text-green-700 text-xs font-semibold px-2.5 py-1 rounded-full border border-green-100">Cureus</span>
+              </div>
+              <h3 class="text-sm sm:text-base lg:text-lg font-bold text-blue-950 mb-2 leading-snug">
+                Yaşlı ABPA Hastasında Maligniteyi Taklit Eden FDG-Avid Üst Lob Kitlesi: Bir Olgu Sunumu
+              </h3>
+              <p class="text-slate-500 text-xs sm:text-sm">
+                İlhan U ve ark. — <em>Cureus</em> 18(1):e101764 (2026)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-card bg-white border border-slate-200 rounded-2xl p-5 sm:p-7 shadow-sm">
+          <div class="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-5">
+            <div class="shrink-0">
+              <span class="inline-block bg-blue-950 text-blue-200 text-xs font-bold px-3 py-1.5 rounded-lg">2025</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex flex-wrap gap-2 mb-2.5">
+                <span class="bg-teal-50 text-teal-700 text-xs font-semibold px-2.5 py-1 rounded-full border border-teal-100">Sarcoidosis, Vasculitis and Diffuse Lung Diseases</span>
+              </div>
+              <h3 class="text-sm sm:text-base lg:text-lg font-bold text-blue-950 mb-2 leading-snug">
+                Fibrotik interstisyel akciğer hastalıklarında egzersizle tetiklenen kas oksijenasyonu değişiklikleri: Yakın kızılötesi spektroskopi çalışması
+              </h3>
+              <p class="text-slate-500 text-xs sm:text-sm mb-3">
+                İlhan U ve ark. — <em>Sarcoidosis, Vasculitis and Diffuse Lung Diseases</em> 42(1):15942 (2025)
+              </p>
+              <a href="https://www.mattioli1885journals.com/index.php/sarcoidosis/article/view/15942" target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center gap-1.5 text-blue-600 hover:text-blue-800 text-xs sm:text-sm font-semibold transition">
+                <i class="fas fa-external-link-alt text-xs"></i> Makaleyi Görüntüle
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-card bg-white border border-slate-200 rounded-2xl p-5 sm:p-7 shadow-sm">
+          <div class="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-5">
+            <div class="shrink-0">
+              <span class="inline-block bg-blue-950 text-blue-200 text-xs font-bold px-3 py-1.5 rounded-lg">2023</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex flex-wrap gap-2 mb-2.5">
+                <span class="bg-teal-50 text-teal-700 text-xs font-semibold px-2.5 py-1 rounded-full border border-teal-100">Sarcoidosis, Vasculitis and Diffuse Lung Diseases</span>
+              </div>
+              <h3 class="text-sm sm:text-base lg:text-lg font-bold text-blue-950 mb-2 leading-snug">
+                Post-COVID-19 interstisyel akciğer hastalığında uzun süreli immünosüpresif tedavinin klinik, fonksiyonel ve radyolojik etkisi
+              </h3>
+              <p class="text-slate-500 text-xs sm:text-sm mb-3">
+                İlhan U ve ark. — <em>Sarcoidosis, Vasculitis and Diffuse Lung Diseases</em> 40(4):e2023049 (2023)
+              </p>
+              <a href="https://www.mattioli1885journals.com/index.php/sarcoidosis/article/view/15055" target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center gap-1.5 text-blue-600 hover:text-blue-800 text-xs sm:text-sm font-semibold transition">
+                <i class="fas fa-external-link-alt text-xs"></i> Makaleyi Görüntüle
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-card bg-white border border-slate-200 rounded-2xl p-5 sm:p-7 shadow-sm">
+          <div class="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-5">
+            <div class="shrink-0">
+              <span class="inline-block bg-blue-950 text-blue-200 text-xs font-bold px-3 py-1.5 rounded-lg">2022</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex flex-wrap gap-2 mb-2.5">
+                <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded-full border border-slate-200">Turkish Journal of Medical Sciences</span>
+              </div>
+              <h3 class="text-sm sm:text-base lg:text-lg font-bold text-blue-950 mb-2 leading-snug">
+                Türkiye'deki KOAH hastalarında alfa-1 antitripsin eksikliği sıklığı ve beklenmedik sonuçlar; nadir varyantlar yaygındır
+              </h3>
+              <p class="text-slate-500 text-xs sm:text-sm mb-3">
+                İlhan U ve ark. — <em>Turkish Journal of Medical Sciences</em> 52(5):1478–1485 (2022)
+              </p>
+              <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10395703/" target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center gap-1.5 text-blue-600 hover:text-blue-800 text-xs sm:text-sm font-semibold transition">
+                <i class="fas fa-external-link-alt text-xs"></i> PubMed Central'da Görüntüle
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BASINDA -->
+  <section id="basinda" class="py-20 sm:py-28 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12 sm:mb-16 border-l-4 border-blue-600 pl-5">
+        <span class="text-blue-600 font-bold tracking-widest uppercase text-xs">Medya</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-blue-950 mt-2">Basında Dr. Umut İlhan</h2>
+        <p class="text-slate-500 mt-2 text-sm sm:text-base">Klinik başarılar ve akademik görünürlük.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-6 sm:gap-8">
+        <div class="bg-white p-7 sm:p-10 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between">
+          <div>
+            <span class="text-blue-600 font-bold text-xs uppercase tracking-widest">Fatih Haber · Yerel Basın</span>
+            <h3 class="text-xl sm:text-2xl font-bold my-4 leading-tight text-blue-950 italic">
+              "Yedikule'de Mucize Dokunuş: 70 Yaşındaki Hasta Hayata Döndürüldü"
+            </h3>
+            <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+              Dr. Umut İlhan ve ekibinin gerçekleştirdiği başarılı müdahale, hekim tecrübesi ve
+              teknolojinin birleşmesiyle yerel basında geniş yer buldu ve üstün klinik uygulama
+              nedeniyle takdir gördü.
+            </p>
+          </div>
+        </div>
+        <div class="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden flex flex-col">
+          <img src="../umut-2.jpeg" alt="Uzm. Dr. Umut İlhan Yedikule Hastanesi'nde ödül alırken"
+               class="w-full h-56 sm:h-64 object-cover">
+          <div class="p-6 sm:p-8 text-center">
+            <h3 class="text-lg sm:text-xl font-bold text-blue-950 italic">Akademik Takdir ve Başarı</h3>
+            <p class="text-slate-500 text-sm mt-2 leading-relaxed">
+              Dr. İlhan'ın Yedikule Hastanesi bünyesindeki üstün klinik başarıları ve
+              pulmonolojiye katkılarının takdiri.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- İLETİŞİM -->
+  <section id="iletisim" class="py-20 sm:py-28 bg-blue-950 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div>
+          <span class="text-blue-300 font-bold tracking-widest uppercase text-xs">Randevu</span>
+          <h2 class="text-3xl sm:text-4xl font-bold mt-3 mb-6">Randevu Alın</h2>
+          <p class="text-blue-100 leading-relaxed mb-8 text-sm sm:text-base">
+            Uzm. Dr. Umut İlhan için randevular Türkiye'nin ulusal MHRS
+            (Merkezi Hekim Randevu Sistemi) sistemi üzerinden alınabilmektedir.
+          </p>
+          <a href="https://mhrs.gov.tr" target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-3 bg-white text-blue-950 px-8 py-4 rounded-full font-bold hover:bg-blue-50 transition shadow-xl text-sm sm:text-base">
+            <i class="fas fa-calendar-check text-blue-700"></i>
+            MHRS'den Randevu Al
+          </a>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div class="flex items-start gap-4 bg-blue-900/50 p-5 rounded-2xl border border-blue-800">
+            <div class="w-10 h-10 bg-blue-700/70 rounded-xl flex items-center justify-center shrink-0 mt-0.5">
+              <i class="fas fa-hospital text-blue-200"></i>
+            </div>
+            <div>
+              <div class="font-bold text-sm mb-1">Yedikule Göğüs Hastalıkları Hastanesi</div>
+              <div class="text-blue-200 text-sm leading-relaxed">
+                Yedikule Göğüs Hastalıkları ve Göğüs Cerrahisi EAH<br>
+                Kazlıçeşme Mh., Belgrad Kapı Yolu Cad. No:1<br>
+                34020 Zeytinburnu, İstanbul
+              </div>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 bg-blue-900/50 p-5 rounded-2xl border border-blue-800">
+            <div class="w-10 h-10 bg-blue-700/70 rounded-xl flex items-center justify-center shrink-0">
+              <i class="fas fa-phone text-blue-200"></i>
+            </div>
+            <div>
+              <div class="font-bold text-sm mb-1">Hastane Telefonu</div>
+              <a href="tel:+902124090200" class="text-blue-200 hover:text-white text-sm transition">+90 212 409 02 00</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 bg-blue-900/50 p-5 rounded-2xl border border-blue-800">
+            <div class="w-10 h-10 bg-blue-700/70 rounded-xl flex items-center justify-center shrink-0">
+              <i class="fas fa-globe text-blue-200"></i>
+            </div>
+            <div>
+              <div class="font-bold text-sm mb-1">Hastane Web Sitesi</div>
+              <a href="https://yedikulegoguseah.saglik.gov.tr" target="_blank" rel="noopener noreferrer"
+                 class="text-blue-300 hover:text-white text-sm transition break-all">
+                yedikulegoguseah.saglik.gov.tr
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 py-8 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs uppercase tracking-widest font-medium">
+      <span>&copy; 2025 Uzm. Dr. Umut İlhan. Tüm hakları saklıdır.</span>
+      <div class="flex flex-wrap justify-center items-center gap-5">
+        <a href="#hakkimda" class="hover:text-white transition">Hakkımda</a>
+        <a href="#yayinlar" class="hover:text-white transition">Yayınlar</a>
+        <a href="#iletisim" class="hover:text-white transition">İletişim</a>
+        <a href="/" class="text-blue-400 hover:text-blue-300 transition font-bold">EN</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var menuToggle = document.getElementById('menu-toggle');
+    var mobileMenu = document.getElementById('mobile-menu');
+    var menuIcon = document.getElementById('menu-icon');
+
+    menuToggle.addEventListener('click', function() {
+      var isOpen = !mobileMenu.classList.contains('hidden');
+      if (isOpen) {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('fa-times');
+        menuIcon.classList.add('fa-bars');
+      } else {
+        mobileMenu.classList.remove('hidden');
+        menuIcon.classList.remove('fa-bars');
+        menuIcon.classList.add('fa-times');
+      }
+    });
+
+    function closeMenu() {
+      mobileMenu.classList.add('hidden');
+      menuIcon.classList.remove('fa-times');
+      menuIcon.classList.add('fa-bars');
+    }
+
+    document.addEventListener('click', function(e) {
+      if (!menuToggle.contains(e.target) && !mobileMenu.contains(e.target)) {
+        closeMenu();
+      }
+    });
+  </script>
+</body>
+</html>
